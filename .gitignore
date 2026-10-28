@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.ipynb_checkpoints/
+artifacts/*.pth
+artifacts/*.joblib
+artifacts/*.csv
+Task4_Transformers_API/saved_model/
+Task4_Transformers_API/training_checkpoints/
+*.png
