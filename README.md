@@ -158,38 +158,3 @@ The following TF-IDF scores were measured by running `Task3_Classical_NLP/task3.
 
 Task 3 writes `artifacts/tfidf_metrics.csv`. Task 4 writes transformer metrics under `Task4_Transformers_API/saved_model/` when training completes. If your own run reports different values, replace the table values with the values from your local CSV/logs.
 
-## GitHub submission process
-
-1. Create a new **public** GitHub repository named `Week3-DeepLearning-NLP` (or use your trainer's required visibility).
-2. In VS Code, open the `Week3-DeepLearning-NLP` folder.
-3. Open Terminal → PowerShell and run:
-
-```powershell
-git init
-git branch -M main
-git add .
-git status
-git commit -m "Add Week 3 deep learning and NLP assessment"
-git remote add origin https://github.com/YOUR-USERNAME/Week3-DeepLearning-NLP.git
-git push -u origin main
-```
-
-Replace `YOUR-USERNAME` with your GitHub username. If `origin` already exists, check it with `git remote -v`; update it using `git remote set-url origin https://github.com/YOUR-USERNAME/Week3-DeepLearning-NLP.git`.
-
-If GitHub rejects the push because the remote already has a README or other commits, run:
-
-```powershell
-git pull --rebase origin main
-git push -u origin main
-```
-
-If Git says `src refspec main does not match any`, create a commit first. Never upload `.env`, API keys, passwords, virtual environments, or large model checkpoints.
-
-## Submission checklist
-
-- [ ] Task 1 runs and loss plot is captured.
-- [ ] Task 2 shows training, validation, reload equality and Logistic Regression comparison.
-- [ ] Task 3 reports accuracy, macro F1, confusion matrix and class keywords.
-- [ ] Task 4 shows tokenizer/pipeline demonstrations, fine-tuning metrics, comparison table and `/predict` screenshot.
-- [ ] README and source files are pushed to GitHub.
-- [ ] Actual output screenshots and measured metrics are added if required by the trainer.
